@@ -87,7 +87,6 @@ footer p {
   margin-bottom: 0;
 }
 
-/* https://stackoverflow.com/questions/18672625/how-to-select-first-2-li-elements-using-css/22212585 */
 footer div a:nth-child(-n + 2) {
   margin: 0 40px 0 0;
 }
@@ -97,7 +96,7 @@ footer, .horizontal-alignment {
 }
 
 .footer-icon {
-  color: rgb(113,128,150);
+  color: rgb(113, 128, 150);
 }
 
 .footer-icon svg {
@@ -177,6 +176,7 @@ footer, .horizontal-alignment {
 }
 
 /* DESKTOP & TABLET */
+
 @media (min-width: 768px) {
   html, body {
     font-size: 21px;
