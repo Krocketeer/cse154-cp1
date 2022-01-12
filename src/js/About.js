@@ -7,7 +7,7 @@
  * Description: Javascript file to control accordion element on about page
  */
 
-window.addEventListener('load', (event) => {
+window.addEventListener('load', function() {
     console.log('page is fully loaded');
 
     let row = document.getElementsByClassName('accordion-header');
