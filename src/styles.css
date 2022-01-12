@@ -1,0 +1,196 @@
+/*
+ * Kenny "Ackerson" Le
+ * CSE 154 AF, Winter 2022
+ * TA: Ludvig Liljenberg, Marina Wooden
+ * 1/5/22
+ * Creative Project #1
+ * Description: Global stylesheet for website
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap");
+
+html, body {
+  /*height: 100%;*/
+  /*width: 100%;*/
+  margin: 0;
+  font-size: 18px;
+}
+
+body {
+  font-family: "Inter", "Helvetica", sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 15px 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+a, .purple, header a:hover, .footer-icon:hover {
+  color: rgb(100, 21, 255)
+}
+
+a {
+  text-decoration: none;
+}
+
+header, .vertical-alignment, .horizontal-alignment {
+  display: flex;
+}
+
+header, .horizontal-alignment {
+  flex-flow: row nowrap;
+}
+
+.vertical-alignment {
+  flex-flow: column nowrap;
+}
+
+.vertical-alignment, .horizontal-alignment {
+  justify-content: center;
+}
+
+header, #banner, .accordion-header  {
+  justify-content: space-between;
+}
+
+header a, .footer-icon {
+  font-size: 28px;
+}
+
+header a {
+  color: rgb(36, 62, 99);
+  font-weight: 600;
+}
+
+header a:nth-child(2):hover {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+
+footer {
+  background-color: rgb(237, 242, 247);
+  padding: 2.5rem 0;
+}
+
+footer p {
+  font-size: 0.875rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0;
+}
+
+/* https://stackoverflow.com/questions/18672625/how-to-select-first-2-li-elements-using-css/22212585 */
+footer div a:nth-child(-n + 2) {
+  margin: 0 40px 0 0;
+}
+
+footer, .horizontal-alignment {
+  align-items: center;
+}
+
+.footer-icon {
+  color: rgb(113,128,150);
+}
+
+#about, #banner {
+  padding: 6rem 0;
+}
+
+#about-text, .accordion-title {
+  text-align: left;
+}
+
+#about-text {
+  width: 42%;
+  min-width: 42%;
+}
+
+#about-text p {
+  font-size: 1.15rem;
+  line-height: 1.5;
+}
+
+#about img {
+  max-width: 48rem;
+  width: 100%;
+}
+
+#banner img {
+  height: 20rem;
+  width: 20rem;
+}
+
+#banner h1 {
+  margin: 0
+}
+
+.dog-image {
+  width: 15rem;
+  height: auto;
+}
+
+#accordion-layout {
+  padding: 20px 0;
+}
+
+.accordion-header {
+  border-top: 2px solid rgb(100, 21, 255);
+}
+
+.accordion-header, .accordion-title {
+  cursor: pointer;
+}
+
+.accordion-title {
+  padding: 16px 0;
+  border: none;
+  outline: none;
+}
+
+.accordion-button {
+  transition: 0.2s ease-out;
+}
+
+.row-text {
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  overflow: hidden;
+  padding: 0 0;
+}
+
+.row-text.active {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+#last-row {
+  border-bottom: 2px solid rgb(100, 21, 255);
+}
+
+
+/* DESKTOP & TABLET */
+@media (min-width: 768px) {
+  html, body {
+    font-size: 21px;
+  }
+
+  .container {
+    padding: 2rem 6rem;
+    /*overflow: hidden;*/
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 72vh;
+  }
+
+  .row-text.active {
+    margin: 16px 0;
+  }
+}
