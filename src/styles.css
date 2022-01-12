@@ -34,7 +34,7 @@ h3 {
   font-size: 1.5rem;
 }
 
-a, .purple, header a:hover, .footer-icon:hover {
+a, .purple, header a:hover {
   color: rgb(100, 21, 255);
 }
 
@@ -95,11 +95,7 @@ footer, .horizontal-alignment {
   align-items: center;
 }
 
-.footer-icon {
-  color: rgb(113, 128, 150);
-}
-
-.footer-icon svg {
+.footer-icon img {
   width: 1em;
   height: 1em;
 }
